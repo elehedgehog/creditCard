@@ -1,0 +1,96 @@
+ul{
+  list-style: none;
+  >li{
+    // float: left;
+  }
+}
+
+._v-container{
+  background-color: #F1F3F7;
+}
+
+.cf::after, .cf::before {
+  display: block;
+  content: '';
+}
+.cf::after {
+  clear: both;
+}
+.creditCard-list{
+  padding-left: 30px;
+  background-color: #fff;
+  >li{
+    padding-top: 30px;
+    height: 183px;
+    border-bottom: 1px solid #E6E6E6;
+    &:nth-last-child(1){
+      border-bottom: none;
+    }
+    >span{
+      display: inline-block;
+      &.creditCard-list-img{
+        float: left;
+        width: 250px;
+        >img{
+          display: inline-block;
+          width: 100%;
+          height: 160px;
+          background-color: #ccc;
+          border-radius: 6px;
+        }
+      }
+      &.creditCard-list-img.bank-list-img{
+          float: left;
+          width: 160px!important;
+          >img{
+            display: inline-block;
+            width: 100%;
+            height: 160px;
+            background-color: #ccc;
+            border-radius: 6px;
+          }
+      }
+      &.creditCard-list-con{
+        float: left;
+        margin-left: 24px;
+        width: calc(100% - 340px);
+        .creditCard-name{
+          width: 100%;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          margin-top: 5px;
+          font-size: 36px;
+          color: #333333;
+        }
+        .creditCard-description{
+          // width: 80%;
+          margin-top: 10px;
+          margin-bottom: 15px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          font-size: 24px;
+          color: #999999;
+        }
+        .creditCard-applications{
+          font-size: 28px;
+          color: #999999;
+          >a>span{
+            color: #FF5C69;
+            >span{
+              color: #999;
+            }
+          }
+          >span{
+            color: #FF5C69;
+
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
